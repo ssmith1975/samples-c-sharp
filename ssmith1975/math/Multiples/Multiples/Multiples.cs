@@ -64,18 +64,7 @@ namespace Multiples
             this.y = val2;
         
         }
- /*
-        public IEnumerator GetEnumerator()
-        {
-            int minVal = Math.Min(this.x, this.y);
-            for(int i = 1; i <= minVal; i++) {
-                if ((this.x % i == 0) && (this.y % i == 0))
-                {
-                    yield return i;
-                }
-            }
-        }
- */
+
         /// <summary>
         /// ListCommonFactors - list of divisors of two numbers
         /// </summary>
