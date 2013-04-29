@@ -33,7 +33,7 @@ namespace _10_EventExample
         // Event Listener
         static void myEvt_valueChanged(string newValue)
         {
-            Console.WriteLine("The value changed to {0}", newValue);
+            Console.WriteLine("The value changed to \"{0}\"", newValue);
         }
 
         static void Main(string[] args)
@@ -41,7 +41,8 @@ namespace _10_EventExample
             EventConsumer myEC = new EventConsumer();
             myEC.valueChanged += new myEventHandler(myEvt_valueChanged); // Subscribe to event
             string str;
-
+            Console.WriteLine("Enter some text and press the ENTER key. Type \"exit\" to quit.");
+            Console.WriteLine();
             do
             {
                 str = Console.ReadLine();
