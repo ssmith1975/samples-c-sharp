@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Express 2012 for Web
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "Twitter_Timeline4", "http://localhost:50115", "{CC78D6A4-FC4A-4D64-92B2-F5B124036B4E}"
+	ProjectSection(WebsiteProperties) = preProject
+		UseIISExpress = "true"
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv3.5"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_50115"
+		Debug.AspNetCompiler.PhysicalPath = "..\Twitter_Timeline4\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_50115\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_50115"
+		Release.AspNetCompiler.PhysicalPath = "..\Twitter_Timeline4\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_50115\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		SlnRelativePath = "..\Twitter_Timeline4\"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CC78D6A4-FC4A-4D64-92B2-F5B124036B4E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CC78D6A4-FC4A-4D64-92B2-F5B124036B4E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

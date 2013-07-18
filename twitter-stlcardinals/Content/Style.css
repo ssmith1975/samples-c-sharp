@@ -1,0 +1,275 @@
+﻿/*
+Body
+width: 321px
+height: 518px
+
+	Gradient
+	From: #fcfcfc
+	To: e0e0e0
+
+Header
+height: 45px
+	Gradient
+	From: #dbdbdb
+	To: #949494
+color: #535252
+
+
+Item
+Padding: 10px 
+
+Footer
+height: 48px
+
+Thumbnail
+width: 69px
+Margin-right: 10px
+
+*/
+
+html, body {
+    margin: 0px;
+    padding: 0px;
+    height: 100%;
+    width: 100%;
+    min-height: 100%;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.25em;
+
+    background-color:  #dbe1e6;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#93a0af), to(#dbe1e6)); /* Chrome, Safari 4+ */
+    background-image: -webkit-linear-gradient(top, #93a0af, #dbe1e6); /* Chrome 10-25, iOS 5+, Safari 5.1+ */
+    background-image:    -moz-linear-gradient(top, #93a0af, #dbe1e6); /* Firefox 3.6-15 */
+    background-image:      -o-linear-gradient(top, #93a0af, #dbe1e6); /* Opera 11.10-12.00 */
+    background-image:         linear-gradient(to bottom, #93a0af, #dbe1e6); 
+
+}
+
+
+#wrapper {
+    width: 100%;
+    height: 100%;
+    min-height: 100%;   
+}
+
+* html #wrapper {
+height: 100%;
+}
+
+#wrapper h1 {
+    font-size: 1.8em;
+    margin: 50px 0px;
+    text-align: center;
+    color: #fff;
+    font-family: 'Segoe UI' , Tahoma, Geneva, Verdana, sans-serif;
+}
+#widgetWrapper {
+    width: 321px;
+    margin: 50px auto 20px;
+    padding: 0px;
+    border: 1px solid #ccc;
+    padding-bottom: 10px;
+    overflow:hidden;
+    
+}
+#widgetHeader {
+    
+    text-align: center;
+    width: 100%;
+    font-weight: bold;
+    line-height: 45px;
+    height: 45px;
+    margin: 0px auto;
+    color: #535252;
+    padding: 0px;
+}
+    #widgetHeader h3{
+        font-size: .9em;
+        margin: 0px;
+        padding: 0px;
+        
+
+    }
+#widgetContainer {
+    width: 301px;
+    margin: 0px auto;    
+    padding: 0px 10px;
+}
+
+
+.DataListStyle {
+    width: 100%;
+    
+}
+.DataListHeaderStyle {
+
+}
+
+.DataListItemStyle {
+   width:100%;
+   min-height: 85px;
+   padding: 10px 0px;
+
+}
+.DataListSeparatorStyle {
+    border-bottom: 2px dotted #ddd;
+    width: 301px;
+    
+}  
+.DataListFooterStyle {
+    width: 100%;
+    height: 48px;
+    padding: 10px 10px;
+    text-align: center;
+    vertical-align: middle;
+    border-top: 2px dotted #ccc;
+    margin-bottom: 10px;  
+}
+
+.twitterItemThumbnail {
+    width: 60px;
+    float: left;
+}
+
+.twitterItemText {
+    margin-left: 60px;
+    font-size: .9em;
+    line-height: 1.2em;
+}
+    .twitterItemText span.hashTagHighlight {
+        font-weight: bold;
+        color: #c00;
+    }
+.twitterScreenName {
+    display: inline-block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+.navButton {
+    width: 70px;
+    height: 25px;    
+}
+
+.navText {
+    width: 150px;
+    margin: 0px auto;
+}
+
+.floatLeft {
+    float: left;
+}
+.floatRight {
+    float: right;
+}
+.twitterFooterPage {
+    font-size: .8em;
+    font-weight: bold;
+    text-align: center;
+    display: inline-block;
+    height: 25px;
+    width: 130px;
+    float: left;
+}
+
+.twitterBtnPrev, .twitterBtnNext,
+.twitterBtnPrevDisabled, .twitterBtnNextDisabled {
+    width: 25px;
+    height: 25px;
+   
+    background: transparent url("../Images/sprite_navButtons.png") no-repeat;
+    display:inline-block;
+    margin: 0px auto;
+}
+
+
+.navLeft {
+    background-position-x: 0px;
+}
+
+.navRight {
+    background-position-x: -229px;
+}
+
+
+.twitterBtnPrev, .twitterBtnNext {   
+    background-position-y: 0px;
+}
+
+.twitterBtnPrev:hover, .twitterBtnNext:hover {
+
+    background-position-y: -38px;
+}
+
+.twitterBtnPrevDisabled, .twitterBtnNextDisabled {
+
+    background-position-y: -76px;
+}
+
+.twitterFeedStatus {
+    text-align: center;
+    display:block;
+    margin: 0 auto;
+    padding: 10px;
+    font-size: .6em;  
+}
+
+.footer {
+    text-align: center;
+    font-size: .6em;
+    margin-top: 20px;
+}
+
+.lightGradient {
+    background: #fcfcfc; /* Old browsers */
+    background: -moz-linear-gradient(top,  #fcfcfc 0%, #f6f6f6 47%, #e0e0e0 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fcfcfc), color-stop(47%,#f6f6f6), color-stop(100%,#e0e0e0)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #fcfcfc 0%,#f6f6f6 47%,#e0e0e0 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #fcfcfc 0%,#f6f6f6 47%,#e0e0e0 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #fcfcfc 0%,#f6f6f6 47%,#e0e0e0 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  #fcfcfc 0%,#f6f6f6 47%,#e0e0e0 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfcfc', endColorstr='#e0e0e0',GradientType=0 ); /* IE6-9 */
+}
+
+.darkGradient {
+    background: #dbdbdb; /* Old browsers */
+    background: -moz-linear-gradient(top,  #dbdbdb 0%, #949494 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#dbdbdb), color-stop(100%,#949494)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #dbdbdb 0%,#949494 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #dbdbdb 0%,#949494 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #dbdbdb 0%,#949494 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  #dbdbdb 0%,#949494 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dbdbdb', endColorstr='#949494',GradientType=0 ); /* IE6-9 */
+}
+
+.roundedBox{
+    
+  -webkit-border-radius: 5px; /* Android ≤ 1.6, iOS 1-3.2, Safari 3-4 */
+          border-radius: 5px; /* Android 2.1+, Chrome, Firefox 4+, IE 9+, iOS 4+, Opera 10.50+, Safari 5+ */
+
+  /* useful if you don't want a bg color from leaking outside the border: */
+  
+    -webkit-background-clip: padding-box;
+    -moz-background-clip:    padding; 
+    background-clip: padding-box; /* Android 2.2+, Chrome, Firefox 4+, IE 9+, iOS 4+, Opera 10.50+, Safari 4+ */
+
+}
+
+.boxShadow {
+  -webkit-box-shadow: 1px 1px 4px 0px #ccc; /* Android 2.3+, iOS 4.0.2-4.2, Safari 3-4 */
+          box-shadow: 1px 1px 4px 0px #ccc; /* Chrome 6+, Firefox 4+, IE 9+, iOS 5+, Opera 10.50+ */
+}
+
+
+.textshadow {
+  text-shadow: 1px 1px 3px #f8f8f8; /* Chrome, Firefox 3.5+, IE 10+, Opera 9+, Safari 1+ */
+}
+
+.clearGroup:after {
+  content: "";
+  display: table;
+  clear: both;
+}
