@@ -1,0 +1,103 @@
+﻿@model MvcAuction.Models.Auction
+@{
+    var auction = Model;
+    var timestamp = DateTime.Now;
+}
+
+<div class="auction">
+    <div class="details">
+        <h3>@auction.Title.ToString()</h3>
+
+        <p>StartTime: @auction.StartTime.ToString("g")</p>
+        <p>EndTime: @auction.EndTime.ToString("g")</p>
+        <p>Starting Price: @auction.StartPrice.ToString("C")</p>
+    
+        @* 
+            Since CurrentPrice is nullable we have to check to 
+            see if it has a value before we call it to string!
+        *@
+
+        <p class="current-price">Current Price:
+            @if(auction.CurrentPrice == null)
+            {
+                @:[No bid]
+            } else {
+                <span>@auction.CurrentPrice.Value.ToString("C")</span> 
+                <span>[@auction.BidCount bids]</span>
+            }
+        </p>
+
+    </div> <!-- //details -->
+
+    @if(auction.ImageUrl != null)
+    {
+        <img src="@auction.ImageUrl" title="@auction.Title" />
+
+    }
+    <div class="description">
+        @auction.Description
+    </div> <!-- // description -->
+
+    <div>
+        <p>
+            @using(Html.BeginForm("Bid","Auction")){
+                var lowestBidAmount = auction.CurrentPrice.GetValueOrDefault(auction.StartPrice) + 1;
+
+                <span>
+                    Bid: $@Html.TextBox("amount", lowestBidAmount)
+                    @Html.ValidationMessage("amount")               
+                </span>          
+
+                @Html.Hidden("auctionId", auction.Id)
+                <input class="post-bid" type="submit" value="Bid" />
+
+                @Html.Hidden("auctionId", auction.Id)
+                @Html.AntiForgeryToken()
+            }
+
+        </p>
+
+        <p>@Html.ActionLink("Auction List","Index")</p>
+        <p>Page last reneded at @timestamp</p>
+    </div>
+</div><!-- //auction -->
+<script id="current-price-template" type="application/html-template">
+    <p class="current-price">
+        <span>{{CurrentPrice}}</span> 
+        <span>[{{BidCount}} bids]</span>
+    </p>
+</script>
+
+@section Scripts {
+    <script type="text/javascript">
+        $(function(){
+            $('.post-bid').on('click', function(){
+
+                var form = $(this).parent("form");
+
+
+                $.ajax({
+                    type: "POST",
+                    url: form.attr('action'),
+                    data: form.serialize()// end ajax
+                }) 
+                    .success(function (data) {
+                        var template = $('#current-price-template').clone().html();
+
+                        var html = template
+                            .replace('{{CurrentPrice}}', data.CurrentPrice)
+                            .replace('{{BidCount}}', data.BidCount);
+
+                        $('.current-price').replaceWith(html); // end success
+                        
+                    }) 
+                    .error(function(){
+                        alert("Your bid has been rejected");// end error
+                    }); 
+
+                return false;
+            }); // end click
+        }); // end jquery
+    </script>
+
+}

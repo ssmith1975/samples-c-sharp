@@ -1,0 +1,24 @@
+﻿@model IEnumerable<MvcAuction.Models.Auction>
+
+@{
+    Layout = "~/Views/Shared/_LayoutWithSidebar.cshtml";
+    ViewBag.Title = "Auction";
+}
+
+@section Sidebar {
+    <h3>This is my sidebar!</h3>
+
+}
+
+
+
+<h2>@ViewBag.Title</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+    @foreach (var item in Model) {
+        @Html.Partial("_AuctionTile", item)
+    }
+
+
