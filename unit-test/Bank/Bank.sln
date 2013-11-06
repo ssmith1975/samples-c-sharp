@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Express 2012 for Web
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bank", "Bank\Bank.csproj", "{F2C94A68-48AA-4E17-8D84-955EE1E4F8D5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BankTest", "BankTest\BankTest.csproj", "{54A98CA5-221A-425C-86D8-EBBEDFB36705}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F2C94A68-48AA-4E17-8D84-955EE1E4F8D5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F2C94A68-48AA-4E17-8D84-955EE1E4F8D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F2C94A68-48AA-4E17-8D84-955EE1E4F8D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F2C94A68-48AA-4E17-8D84-955EE1E4F8D5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{54A98CA5-221A-425C-86D8-EBBEDFB36705}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{54A98CA5-221A-425C-86D8-EBBEDFB36705}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{54A98CA5-221A-425C-86D8-EBBEDFB36705}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{54A98CA5-221A-425C-86D8-EBBEDFB36705}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
