@@ -166,3 +166,4 @@ pip-log.txt
 ## Special Files
 #############
 twitter-stlcardinals/Web.config
+ConnectionStrings.config
